@@ -1,3 +1,13 @@
 spring:
-  application:
-    name: pnc-parcial-final-restaurante
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:local}
+  jpa:
+    hibernate:
+      ddl-auto: none
+  flyway:
+    enabled: true
+
+app:
+  jwt-secret: ${JWT_SECRET}
+  jwt-expiration-milliseconds: 900000 # 15 minutos (Access Token)
+  jwt-refresh-expiration-milliseconds: 604800000 # 7 días (Refresh Token)

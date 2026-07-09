@@ -1,4 +1,4 @@
-package com.uca.pncparcialfinalrestaurante.config.service.entity;
+package com.uca.pncparcialfinalrestaurante.config.domain.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
